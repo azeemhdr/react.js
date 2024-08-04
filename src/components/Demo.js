@@ -4,6 +4,13 @@ import img from "../1430602_6963.jpg";
 import Li from "./Li";
 import User from "./User";
 import Card from "./Card";
+import Price from "./Price";
+import Class from "./Class";
+import StateFun from "./StateFun"
+import Count from "./Count";
+import Input from "./Input"
+// import Newfetch from "./Newfetch";
+import Form from "./Form";
 function Demo() {
   return (
     <>
@@ -15,10 +22,11 @@ function Demo() {
 
       <User></User>
 
+      {/* 31/july/24 class */}
       <div className="container border p-4">
         <div className="row">
           <div className="col-md-3 border m-2 p-2">
-            <Card title="web designing" content="web designing" />
+            <Card title="web designing" content="web designing" price="1000" />
           </div>
           <div className="col-md-3 border m-2 p-2">
             <Card title="UI designing" content="UI designing" />
@@ -30,10 +38,20 @@ function Demo() {
             <Card title="digital marketing" content="digital marketing" />
           </div>
           <div className="col-md-3 border m-2 p-2"> 
-            <Card />
+      
+            <Card title="" />
           </div>
         </div>
       </div>
+      <Class price="5000" subject="English"/>
+      <StateFun/>
+      <Count/>
+
+      {/* 01/Aug/2024 */}
+        <Input/>
+        {/* <Newfetch/> */}
+
+        <Form/>
     </>
   );
 }
