@@ -9,7 +9,13 @@ function Count(){
 		setCount(count)
 	}
 	function dec(){
-		setCount(--count)
+		if(count==0){
+			return
+		}else{
+			setCount(--count)
+
+		}
+		
 		// setCount(count--)
 		// dec=== 0?alert("please click on +"):count--
 		// setCount(count
@@ -20,9 +26,14 @@ function Count(){
 	return(
 		<>
 		<div className="container border p-4 mt-2 rounded border-dark">
+
 			<h1 className="h1"> {count} </h1>
+			{/* {(count==0)? <button className="btn btn-info mx-1 text-white fw-bold fs-3" onClick={inc}>+</button>:<button className="btn btn-info mx-1 text-white fw-bold	fs-3" onClick={dec}>-</button>} */}
+
 			<button className="btn btn-info mx-1 text-white fw-bold fs-3" onClick={inc}>+</button>
 			<button className="btn btn-info mx-1 text-white fw-bold	fs-3" onClick={dec}>-</button>
+			
+			
 		</div>
 		</>
 	)
