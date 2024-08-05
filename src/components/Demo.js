@@ -11,6 +11,11 @@ import Count from "./Count";
 import Input from "./Input"
 // import Newfetch from "./Newfetch";
 import Form from "./Form";
+
+import Nav from "../Assignment/Nav"
+import Nav2 from "../Assignment/Nav2"
+import Nav3 from "../Assignment/Nav3"
+
 function Demo() {
   return (
     <>
@@ -23,7 +28,7 @@ function Demo() {
       <User></User>
 
       {/* 31/july/24 class */}
-      <div className="container border p-4">
+      <div className="container border p-4 ">
         <div className="row">
           <div className="col-md-3 border m-2 p-2">
             <Card title="web designing" content="web designing" price="1000" />
@@ -52,6 +57,9 @@ function Demo() {
         {/* <Newfetch/> */}
 
         <Form/>
+        <Nav/>
+        <Nav2/>
+        <Nav3/>
     </>
   );
 }
