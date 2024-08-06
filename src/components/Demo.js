@@ -15,6 +15,7 @@ import Form from "./Form";
 import Nav from "../Assignment/Nav"
 import Nav2 from "../Assignment/Nav2"
 import Nav3 from "../Assignment/Nav3"
+import Nav4 from "../Assignment/Nav4"
 
 function Demo() {
   return (
@@ -60,6 +61,7 @@ function Demo() {
         <Nav/>
         <Nav2/>
         <Nav3/>
+        <Nav4/>
     </>
   );
 }

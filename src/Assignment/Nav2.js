@@ -12,10 +12,10 @@ function Nav2() {
 	return (
 	  <div className="container border border-dark rounded shadow mt-2">
 		<ul className="nav nav-tabs">
-		  {tabs.map((tab, index) => (
+		  {tabs.map((item, index) => (
 			<li className="nav-item" key={index}>
 			  <button className="nav-link" onClick={() => setActive(index)}>
-				{tab}
+				{item}
 			  </button>
 			</li>
 		  ))}
